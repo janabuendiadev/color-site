@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Color Site</title>
+        <style>
+
+      body {
+      display: flex;
+      justify-content: center;   
+      align-items: center;       
+      min-height: 100vh;         
+      margin: 0;
+      font-family: Arial, sans-serif;
+      flex-direction: column;   
+      }
+
+      .buttonRow {
+      display: flex;       
+      gap: 10px;           
+      margin-bottom: 20px; 
+      }
+
+      #colorBox {
+      width: 400px;
+      height: 200px;
+      background-color: blue; 
+      margin-top: 20px;
+      }
+
+    .colorBtn {
+      width: 80px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+     }
+
+ </style>
+  </head>
+    <body>
+        <h2>Welcome to Color Site</h2>
+  <div class="buttonRow">
+  <button class="colorBtn" style="background-color: yellow;" onclick="changeColor('yellow')"></button>
+  <button class="colorBtn" style="background-color: orange;" onclick="changeColor('orange')"></button>
+  <button class="colorBtn" style="background-color: green;" onclick="changeColor('green')"></button>
+  <button class="colorBtn" style="background-color: red;" onclick="changeColor('red')"></button>
+  </div>
+    
+  <div id="colorBox"></div>
+
+  <script>
+    function changeColor(color) {
+      document.getElementById('colorBox').style.backgroundColor = color;
+    }
+  </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
